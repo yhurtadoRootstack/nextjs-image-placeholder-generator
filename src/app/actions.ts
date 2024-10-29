@@ -39,7 +39,7 @@ export async function convert(prevState: string | null, formData: FormData) {
     : 30;
 
   console.log(newW);
-  const res = await sharp(buffer).resize(newW).webp().toBuffer();
+  const res = await sharp(buffer).resize(newW).blur(5).webp().toBuffer();
 
   const base64 = Buffer.from(res).toString("base64");
 
