@@ -100,7 +100,7 @@ export default function UploadForm() {
               alt="imagen generada"
               fill
               src={result}
-              style={{ objectFit: "contain" }}
+              objectFit="contain"
             />
           </div>
 
