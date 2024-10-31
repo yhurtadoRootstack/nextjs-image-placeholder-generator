@@ -74,7 +74,7 @@ export default function UploadForm() {
             step={1}
             min={1}
             name="factor"
-            onChange={submit}
+            onValueCommit={submit}
           />
         </div>
       </div>
@@ -88,7 +88,7 @@ export default function UploadForm() {
             step={1}
             min={1}
             name="blur"
-            onChange={submit}
+            onValueCommit={submit}
           />
         </div>
       </div>
